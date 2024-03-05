@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.agata.firstapp"
-        minSdk = 24
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -29,6 +29,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    buildFeatures{
+        viewBinding = true
+//        dataBinding = true
     }
 }
 
