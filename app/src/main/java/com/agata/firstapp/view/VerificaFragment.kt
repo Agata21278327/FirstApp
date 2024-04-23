@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.agata.firstapp.R
-import com.agata.firstapp.databinding.FragmentCalculoBinding
 import com.agata.firstapp.databinding.FragmentVerificaBinding
-import java.time.LocalDateTime
 
 class VerificaFragment : Fragment() {
     private var _binding: FragmentVerificaBinding? = null

@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">FirstApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+        <string name="app_name">firt project</string>
+        <string name="email">Digite seu Email: </string>
+        <string name="nome">Digite seu nome: </string>
+        <string name="idade">Digite sua idade: </string>
+        <string name="enviar">Enviar </string>
+        <string name="telefone">Digite seu telefone: </string>
+        <string name="anoNascimento">Digite o ano em que nasceu: </string>
+        <!-- TODO: Remove or change this placeholder text -->
+        <string name="sexo">Digite o seu gênero:</string>
+        <string name="faixaetaria">Digite sua idade:</string>
+        <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

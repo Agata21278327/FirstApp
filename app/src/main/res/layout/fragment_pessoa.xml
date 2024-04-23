@@ -7,6 +7,9 @@
     tools:context=".view.PessoaFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
+
+
     <TextView
         android:id="@+id/tvNome"
         android:layout_width="match_parent"
@@ -38,11 +41,53 @@
         android:hint="Digite seu ano de nascimento"
         android:maxLength="4"/>
 
-    <Button
-        android:id="@+id/btnEnviar"
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione seu sexo:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="24sp" />
+
+    <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Masculino"/>
+        <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino"/>
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="90dp"
         android:text="Enviar"
         android:textStyle="bold"/>
 
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="5dp"
+        android:text="Excluir"
+        android:textStyle="bold"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:visibility="invisible"
+        />
 </LinearLayout>
