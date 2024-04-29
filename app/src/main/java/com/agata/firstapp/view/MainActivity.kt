@@ -14,24 +14,25 @@ import java.time.LocalDateTime
 
 class MainActivity : AppCompatActivity() {
 
+    //criar a toolbar
     private lateinit var appBarConfiguration: AppBarConfiguration
+
+    //criar a navegação
     private lateinit var navController: NavController
 
+    //criar o binding
     private var _binding: ActivityMainBinding? = null
     private val binding: ActivityMainBinding get() = _binding!!
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //configura o binding
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Configura a navegação e a toolbar
         val navHostFragment = supportFragmentManager.findFragmentById(binding.fragmentContainerView.id) as NavHostFragment
         navController = navHostFragment.navController
         appBarConfiguration = AppBarConfiguration(navController.graph)
         binding.toolbar.setupWithNavController(navController, appBarConfiguration)
     }
-
-//    private fun emailEstaValido(email: String): Boolean {}
-//    val arroba = email.find { it == '@' }
-//    return arroba == '@'
-////}
 }
